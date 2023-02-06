@@ -160,8 +160,8 @@ type B = {
     b: string;
 }
 
-const aa: A | B = { a: 'hello', b: 'world' };
-const bb: A & B = { a: 'hello', b: 'world' };
+const aa: A | B = { a: 'hello', b: 'world' }; // {a:'hello'} 이것도 되버림. 한개만 만족하면 돼서.
+const bb: A & B = { a: 'hello', b: 'world' }; //모든 속성이 다 있어야됨.
 
 ```
 - interface끼리는 서로 합쳐짐.
